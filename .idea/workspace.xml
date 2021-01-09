@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ed6872ea-09d3-4b0b-90a8-06b9bfd43690" name="Default Changelist" comment="Proje oluşturdum MVC yapısı ve JetStream ile hazır Uyelik oluşturdum">
+    <list default="true" id="ed6872ea-09d3-4b0b-90a8-06b9bfd43690" name="Default Changelist" comment="Routing Controller View Kullandım">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,7 +176,8 @@
       <updated>1609361666115</updated>
       <workItem from="1609361667301" duration="1975000" />
       <workItem from="1609417220484" duration="3456000" />
-      <workItem from="1610143519028" duration="5754000" />
+      <workItem from="1610143519028" duration="6141000" />
+      <workItem from="1610201628069" duration="2373000" />
     </task>
     <task id="LOCAL-00001" summary="Proje oluşturdum MVC yapısı ve JetStream ile hazır Uyelik oluşturdum">
       <created>1609422749581</created>
@@ -193,14 +193,34 @@
       <option name="project" value="LOCAL" />
       <updated>1609422772645</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Routing Controller View Kullandım">
+      <created>1610149900395</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1610149900395</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Proje oluşturdum MVC yapısı ve JetStream ile hazır Uyelik oluşturdum" />
-    <option name="LAST_COMMIT_MESSAGE" value="Proje oluşturdum MVC yapısı ve JetStream ile hazır Uyelik oluşturdum" />
+    <MESSAGE value="Routing Controller View Kullandım" />
+    <option name="LAST_COMMIT_MESSAGE" value="Routing Controller View Kullandım" />
   </component>
 </project>
