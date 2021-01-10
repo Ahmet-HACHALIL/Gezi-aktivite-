@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ed6872ea-09d3-4b0b-90a8-06b9bfd43690" name="Default Changelist" comment="Layout Ana Şablon Masterpage yaptım ve extend ettim">
+    <list default="true" id="ed6872ea-09d3-4b0b-90a8-06b9bfd43690" name="Default Changelist" comment="Bootsrap ile Layout Şablon yaptım">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +178,8 @@
       <workItem from="1609417220484" duration="3456000" />
       <workItem from="1610143519028" duration="6141000" />
       <workItem from="1610201628069" duration="3256000" />
-      <workItem from="1610211090773" duration="5000000" />
+      <workItem from="1610211090773" duration="5836000" />
+      <workItem from="1610283328415" duration="7866000" />
     </task>
     <task id="LOCAL-00001" summary="Proje oluşturdum MVC yapısı ve JetStream ile hazır Uyelik oluşturdum">
       <created>1609422749581</created>
@@ -209,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610204334457</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Bootsrap ile Layout Şablon yaptım">
+      <created>1610221954921</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1610221954921</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -231,6 +238,7 @@
     <MESSAGE value="Proje oluşturdum MVC yapısı ve JetStream ile hazır Uyelik oluşturdum" />
     <MESSAGE value="Routing Controller View Kullandım" />
     <MESSAGE value="Layout Ana Şablon Masterpage yaptım ve extend ettim" />
-    <option name="LAST_COMMIT_MESSAGE" value="Layout Ana Şablon Masterpage yaptım ve extend ettim" />
+    <MESSAGE value="Bootsrap ile Layout Şablon yaptım" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bootsrap ile Layout Şablon yaptım" />
   </component>
 </project>
