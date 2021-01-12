@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ed6872ea-09d3-4b0b-90a8-06b9bfd43690" name="Default Changelist" comment="Hazır Html Web Template Uyarladım">
+    <list default="true" id="ed6872ea-09d3-4b0b-90a8-06b9bfd43690" name="Default Changelist" comment="Admin temel dosyaları oluşturdum(Admin Panel template Uyarladım)">
+      <change beforePath="$PROJECT_DIR$/.idea/laravel1j.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel1j.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -136,6 +141,7 @@
       <path value="$PROJECT_DIR$/vendor/voku/portable-ascii" />
       <path value="$PROJECT_DIR$/vendor/vlucas/phpdotenv" />
       <path value="$PROJECT_DIR$/vendor/psy/psysh" />
+      <path value="$PROJECT_DIR$/vendor/laravel/ui" />
     </include_path>
   </component>
   <component name="ProjectId" id="1mOPSgbfivZMgEZwRWXCAuLUBMw" />
@@ -148,6 +154,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mariadb&#10;mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -182,7 +189,8 @@
       <workItem from="1610211090773" duration="5836000" />
       <workItem from="1610283328415" duration="8163000" />
       <workItem from="1610312787359" duration="3791000" />
-      <workItem from="1610407262936" duration="5733000" />
+      <workItem from="1610407262936" duration="5973000" />
+      <workItem from="1610467308858" duration="14750000" />
     </task>
     <task id="LOCAL-00001" summary="Proje oluşturdum MVC yapısı ve JetStream ile hazır Uyelik oluşturdum">
       <created>1609422749581</created>
@@ -226,7 +234,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610292202781</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Admin temel dosyaları oluşturdum(Admin Panel template Uyarladım)">
+      <created>1610413392362</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1610413392362</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,6 +265,7 @@
     <MESSAGE value="Layout Ana Şablon Masterpage yaptım ve extend ettim" />
     <MESSAGE value="Bootsrap ile Layout Şablon yaptım" />
     <MESSAGE value="Hazır Html Web Template Uyarladım" />
-    <option name="LAST_COMMIT_MESSAGE" value="Hazır Html Web Template Uyarladım" />
+    <MESSAGE value="Admin temel dosyaları oluşturdum(Admin Panel template Uyarladım)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Admin temel dosyaları oluşturdum(Admin Panel template Uyarladım)" />
   </component>
 </project>
