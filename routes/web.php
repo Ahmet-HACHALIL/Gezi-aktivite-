@@ -30,7 +30,17 @@ Route::get('/aboutus', [HomeController::class, 'aboutus'])->name('aboutus');
 Route::get('/test/{id}/{name}', [HomeController::class, 'test'])->whereNumber('id')->whereAlpha('name')->name('test');
 
 //Admin
-Route::get('/admin', [\App\Http\Controllers\Admin\HomeController::class, 'index'])->name('admin_home')->middleware('auth');
+Route::middleware('auth')->prefix('admin')->group(function (){
+
+    Route::get('/', [\App\Http\Controllers\Admin\HomeController::class, 'index'])->name('admin_home');
+
+    Route::get('turlar', [\App\Http\Controllers\Admin\TurlarController::class, 'index'])->name('admin_turlar');
+    Route::get('turlar/add', [\App\Http\Controllers\Admin\TurlarController::class, 'add'])->name('admin_turlar_add');
+    Route::get('turlar/update', [\App\Http\Controllers\Admin\TurlarController::class, 'update'])->name('admin_turlar_update');
+    Route::get('turlar/delete', [\App\Http\Controllers\Admin\TurlarController::class, 'destroy'])->name('admin_turlar_delete');
+    Route::get('turlar/show', [\App\Http\Controllers\Admin\TurlarController::class, 'show'])->name('admin_turlar_show');
+
+});
 
 //login
 Route::get('/admin/login', [HomeController::class, 'login'])->name('admin_login');
