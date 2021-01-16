@@ -37,7 +37,8 @@ Route::middleware('auth')->prefix('admin')->group(function (){
     Route::get('tour', [\App\Http\Controllers\Admin\TurlarController::class, 'index'])->name('admin_turlar');
     Route::get('tour/add', [\App\Http\Controllers\Admin\TurlarController::class, 'add'])->name('admin_turlar_add');
     Route::post('tour/create', [\App\Http\Controllers\Admin\TurlarController::class, 'create'])->name('admin_turlar_create');
-    Route::post('tour/update', [\App\Http\Controllers\Admin\TurlarController::class, 'update'])->name('admin_turlar_update');
+    Route::get('tour/edit/{id}', [\App\Http\Controllers\Admin\TurlarController::class, 'edit'])->name('admin_turlar_edit');
+    Route::post('tour/update/{id}', [\App\Http\Controllers\Admin\TurlarController::class, 'update'])->name('admin_turlar_update');
     Route::get('tour/delete/{id}', [\App\Http\Controllers\Admin\TurlarController::class, 'destroy'])->name('admin_turlar_delete');
     Route::get('tour/show', [\App\Http\Controllers\Admin\TurlarController::class, 'show'])->name('admin_turlar_show');
 
