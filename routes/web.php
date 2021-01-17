@@ -33,7 +33,7 @@ Route::get('/test/{id}/{name}', [HomeController::class, 'test'])->whereNumber('i
 Route::middleware('auth')->prefix('admin')->group(function (){
 
     Route::get('/', [\App\Http\Controllers\Admin\HomeController::class, 'index'])->name('admin_home');
-
+    #Tours
     Route::get('tour', [\App\Http\Controllers\Admin\TurlarController::class, 'index'])->name('admin_turlar');
     Route::get('tour/add', [\App\Http\Controllers\Admin\TurlarController::class, 'add'])->name('admin_turlar_add');
     Route::post('tour/create', [\App\Http\Controllers\Admin\TurlarController::class, 'create'])->name('admin_turlar_create');
@@ -42,6 +42,17 @@ Route::middleware('auth')->prefix('admin')->group(function (){
     Route::get('tour/delete/{id}', [\App\Http\Controllers\Admin\TurlarController::class, 'destroy'])->name('admin_turlar_delete');
     Route::get('tour/show', [\App\Http\Controllers\Admin\TurlarController::class, 'show'])->name('admin_turlar_show');
 
+    #Sightseeing_Places
+    Route::prefix('Sightseeing_Places')->group(function () {
+        //Route assigned name "admin.users"...
+        Route::get('/', [\App\Http\Controllers\Admin\SightseeingPlacesController::class, 'index'])->name('admin_sightseeing_place');
+        Route::get('create', [\App\Http\Controllers\Admin\SightseeingPlacesController::class, 'create'])->name('admin_sightseeing_place_add');
+        Route::post('store', [\App\Http\Controllers\Admin\SightseeingPlacesController::class, 'store'])->name('admin_sightseeing_place_store');
+        Route::get('edit/{id}', [\App\Http\Controllers\Admin\SightseeingPlacesController::class, 'edit'])->name('admin_sightseeing_place_edit');
+        Route::post('update/{id}', [\App\Http\Controllers\Admin\SightseeingPlacesController::class, 'update'])->name('admin_sightseeing_place_update');
+        Route::get('delete/{id}', [\App\Http\Controllers\Admin\SightseeingPlacesController::class, 'destroy'])->name('admin_sightseeing_place_delete');
+        Route::get('show', [\App\Http\Controllers\Admin\SightseeingPlacesController::class, 'show'])->name('admin_sightseeing_place_show');
+    });
 });
 
 //login

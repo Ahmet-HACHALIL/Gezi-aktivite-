@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ed6872ea-09d3-4b0b-90a8-06b9bfd43690" name="Default Changelist" comment="Turlar Ekleme ve turlar Silme işlemleri yaptım">
+    <list default="true" id="ed6872ea-09d3-4b0b-90a8-06b9bfd43690" name="Default Changelist" comment="Turlar Edit Düzenleme yaptım">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -190,7 +190,10 @@
       <workItem from="1610570687711" duration="6157000" />
       <workItem from="1610623908408" duration="8976000" />
       <workItem from="1610783030644" duration="12171000" />
-      <workItem from="1610815489994" duration="5396000" />
+      <workItem from="1610815489994" duration="15887000" />
+      <workItem from="1610883202684" duration="3633000" />
+      <workItem from="1610887448806" duration="75000" />
+      <workItem from="1610888829656" duration="17660000" />
     </task>
     <task id="LOCAL-00001" summary="Proje oluşturdum MVC yapısı ve JetStream ile hazır Uyelik oluşturdum">
       <created>1609422749581</created>
@@ -262,7 +265,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610805067261</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Turlar Edit Düzenleme yaptım">
+      <created>1610821852756</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1610821852756</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -290,6 +300,7 @@
     <MESSAGE value="Admin Login İşlemleri yaptım" />
     <MESSAGE value="Turlar Database İşlemleri Model Migration Route Controller List hepsini yaptım" />
     <MESSAGE value="Turlar Ekleme ve turlar Silme işlemleri yaptım" />
-    <option name="LAST_COMMIT_MESSAGE" value="Turlar Ekleme ve turlar Silme işlemleri yaptım" />
+    <MESSAGE value="Turlar Edit Düzenleme yaptım" />
+    <option name="LAST_COMMIT_MESSAGE" value="Turlar Edit Düzenleme yaptım" />
   </component>
 </project>
