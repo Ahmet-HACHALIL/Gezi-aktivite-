@@ -55,6 +55,8 @@ Route::middleware('auth')->prefix('admin')->group(function (){
     });
 });
 
+
+
 //login
 Route::get('/admin/login', [HomeController::class, 'login'])->name('admin_login');
 Route::post('/admin/logincheck', [HomeController::class, 'logincheck'])->name('admin_logincheck');
