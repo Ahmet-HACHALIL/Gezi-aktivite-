@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ed6872ea-09d3-4b0b-90a8-06b9bfd43690" name="Default Changelist" comment="sightseeing places Image Upload and Display yaptım">
+    <list default="true" id="ed6872ea-09d3-4b0b-90a8-06b9bfd43690" name="Default Changelist" comment="sightseeing places image gallery oluşturdum">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -203,7 +203,8 @@
       <workItem from="1611230973536" duration="2941000" />
       <workItem from="1611242400339" duration="2060000" />
       <workItem from="1611304914276" duration="16366000" />
-      <workItem from="1611420085415" duration="10504000" />
+      <workItem from="1611420085415" duration="11859000" />
+      <workItem from="1611472786673" duration="17449000" />
     </task>
     <task id="LOCAL-00001" summary="Proje oluşturdum MVC yapısı ve JetStream ile hazır Uyelik oluşturdum">
       <created>1609422749581</created>
@@ -303,7 +304,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611315998105</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="sightseeing places image gallery oluşturdum">
+      <created>1611434846160</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1611434846160</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -335,6 +343,7 @@
     <MESSAGE value="sightseeing places (CRUD) Ekleme Listeleme Düzenleme Silme işlemleri hepsini yaptım" />
     <MESSAGE value="sightseeing places Detail Zengin Metin Editorü (niceditors) ekledim" />
     <MESSAGE value="sightseeing places Image Upload and Display yaptım" />
-    <option name="LAST_COMMIT_MESSAGE" value="sightseeing places Image Upload and Display yaptım" />
+    <MESSAGE value="sightseeing places image gallery oluşturdum" />
+    <option name="LAST_COMMIT_MESSAGE" value="sightseeing places image gallery oluşturdum" />
   </component>
 </project>
