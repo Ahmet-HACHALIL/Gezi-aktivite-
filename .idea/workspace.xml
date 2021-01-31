@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ed6872ea-09d3-4b0b-90a8-06b9bfd43690" name="Default Changelist" comment="Setting Site Ayarları ayarladım">
+    <list default="true" id="ed6872ea-09d3-4b0b-90a8-06b9bfd43690" name="Default Changelist" comment="Relation Tour Sightseeing One to Many İlişkisi bağladım">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -203,7 +203,14 @@
       <workItem from="1611242400339" duration="2060000" />
       <workItem from="1611304914276" duration="16366000" />
       <workItem from="1611420085415" duration="11859000" />
-      <workItem from="1611472786673" duration="23421000" />
+      <workItem from="1611472786673" duration="24127000" />
+      <workItem from="1611512379611" duration="596000" />
+      <workItem from="1611603385900" duration="8362000" />
+      <workItem from="1611676338185" duration="13202000" />
+      <workItem from="1611846704295" duration="3310000" />
+      <workItem from="1611936505211" duration="4481000" />
+      <workItem from="1612011810686" duration="12472000" />
+      <workItem from="1612117562392" duration="7078000" />
     </task>
     <task id="LOCAL-00001" summary="Proje oluşturdum MVC yapısı ve JetStream ile hazır Uyelik oluşturdum">
       <created>1609422749581</created>
@@ -317,7 +324,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611497932883</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Relation Tour Sightseeing One to Many İlişkisi bağladım">
+      <created>1611508288697</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1611508288697</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -351,6 +365,7 @@
     <MESSAGE value="sightseeing places Image Upload and Display yaptım" />
     <MESSAGE value="sightseeing places image gallery oluşturdum" />
     <MESSAGE value="Setting Site Ayarları ayarladım" />
-    <option name="LAST_COMMIT_MESSAGE" value="Setting Site Ayarları ayarladım" />
+    <MESSAGE value="Relation Tour Sightseeing One to Many İlişkisi bağladım" />
+    <option name="LAST_COMMIT_MESSAGE" value="Relation Tour Sightseeing One to Many İlişkisi bağladım" />
   </component>
 </project>
