@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ed6872ea-09d3-4b0b-90a8-06b9bfd43690" name="Default Changelist" comment="Tour Tree Sub Tour Gösterimi ve Fonksiyon Tanımı yaptım">
+    <list default="true" id="ed6872ea-09d3-4b0b-90a8-06b9bfd43690" name="Default Changelist" comment="Home Page Setting Meta tags data User ve sayfa linkleri düzleyip yaptım">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -212,7 +214,8 @@
       <workItem from="1611936505211" duration="4481000" />
       <workItem from="1612011810686" duration="12472000" />
       <workItem from="1612117562392" duration="7401000" />
-      <workItem from="1612193299560" duration="14131000" />
+      <workItem from="1612193299560" duration="14872000" />
+      <workItem from="1612277353261" duration="12521000" />
     </task>
     <task id="LOCAL-00001" summary="Proje oluşturdum MVC yapısı ve JetStream ile hazır Uyelik oluşturdum">
       <created>1609422749581</created>
@@ -340,7 +343,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612125376916</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Home Page Setting Meta tags data User ve sayfa linkleri düzleyip yaptım">
+      <created>1612212930922</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1612212930922</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -376,6 +386,7 @@
     <MESSAGE value="Setting Site Ayarları ayarladım" />
     <MESSAGE value="Relation Tour Sightseeing One to Many İlişkisi bağladım" />
     <MESSAGE value="Tour Tree Sub Tour Gösterimi ve Fonksiyon Tanımı yaptım" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tour Tree Sub Tour Gösterimi ve Fonksiyon Tanımı yaptım" />
+    <MESSAGE value="Home Page Setting Meta tags data User ve sayfa linkleri düzleyip yaptım" />
+    <option name="LAST_COMMIT_MESSAGE" value="Home Page Setting Meta tags data User ve sayfa linkleri düzleyip yaptım" />
   </component>
 </project>
