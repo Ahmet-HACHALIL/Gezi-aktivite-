@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ed6872ea-09d3-4b0b-90a8-06b9bfd43690" name="Default Changelist" comment="Home Page Setting Meta tags data User ve sayfa linkleri düzleyip yaptım">
+    <list default="true" id="ed6872ea-09d3-4b0b-90a8-06b9bfd43690" name="Default Changelist" comment="User Profile Page oluşturdum Jetstream sayfasını panele aldım">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Actions/Fortify/UpdateUserProfileInformation.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Actions/Fortify/UpdateUserProfileInformation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/jetstream.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/jetstream.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/profile/update-profile-information-form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profile/update-profile-information-form.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -215,7 +218,7 @@
       <workItem from="1612011810686" duration="12472000" />
       <workItem from="1612117562392" duration="7401000" />
       <workItem from="1612193299560" duration="14872000" />
-      <workItem from="1612277353261" duration="12521000" />
+      <workItem from="1612277353261" duration="20982000" />
     </task>
     <task id="LOCAL-00001" summary="Proje oluşturdum MVC yapısı ve JetStream ile hazır Uyelik oluşturdum">
       <created>1609422749581</created>
@@ -350,7 +353,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612212930922</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="User Profile Page oluşturdum Jetstream sayfasını panele aldım">
+      <created>1612297126522</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1612297126523</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -387,6 +397,7 @@
     <MESSAGE value="Relation Tour Sightseeing One to Many İlişkisi bağladım" />
     <MESSAGE value="Tour Tree Sub Tour Gösterimi ve Fonksiyon Tanımı yaptım" />
     <MESSAGE value="Home Page Setting Meta tags data User ve sayfa linkleri düzleyip yaptım" />
-    <option name="LAST_COMMIT_MESSAGE" value="Home Page Setting Meta tags data User ve sayfa linkleri düzleyip yaptım" />
+    <MESSAGE value="User Profile Page oluşturdum Jetstream sayfasını panele aldım" />
+    <option name="LAST_COMMIT_MESSAGE" value="User Profile Page oluşturdum Jetstream sayfasını panele aldım" />
   </component>
 </project>
