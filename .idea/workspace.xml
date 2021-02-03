@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ed6872ea-09d3-4b0b-90a8-06b9bfd43690" name="Default Changelist" comment="User Profile Page oluşturdum Jetstream sayfasını panele aldım">
+    <list default="true" id="ed6872ea-09d3-4b0b-90a8-06b9bfd43690" name="Default Changelist" comment="User Profile Photo Ek Alanlar Ekleme ekledim ve Güncelleme işledim">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Actions/Fortify/UpdateUserProfileInformation.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Actions/Fortify/UpdateUserProfileInformation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/jetstream.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/jetstream.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/profile/update-profile-information-form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profile/update-profile-information-form.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,15 +152,15 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/home" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\php\laravel1j\resources\views\admin" />
       <recent name="C:\php\laravel1j\resources\views\home" />
+      <recent name="C:\php\laravel1j\resources\views\admin" />
     </key>
   </component>
   <component name="RunManager">
@@ -218,7 +212,8 @@
       <workItem from="1612011810686" duration="12472000" />
       <workItem from="1612117562392" duration="7401000" />
       <workItem from="1612193299560" duration="14872000" />
-      <workItem from="1612277353261" duration="20982000" />
+      <workItem from="1612277353261" duration="25334000" />
+      <workItem from="1612357066035" duration="6691000" />
     </task>
     <task id="LOCAL-00001" summary="Proje oluşturdum MVC yapısı ve JetStream ile hazır Uyelik oluşturdum">
       <created>1609422749581</created>
@@ -360,7 +355,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612297126523</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="User Profile Photo Ek Alanlar Ekleme ekledim ve Güncelleme işledim">
+      <created>1612306252349</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1612306252350</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -398,6 +400,7 @@
     <MESSAGE value="Tour Tree Sub Tour Gösterimi ve Fonksiyon Tanımı yaptım" />
     <MESSAGE value="Home Page Setting Meta tags data User ve sayfa linkleri düzleyip yaptım" />
     <MESSAGE value="User Profile Page oluşturdum Jetstream sayfasını panele aldım" />
-    <option name="LAST_COMMIT_MESSAGE" value="User Profile Page oluşturdum Jetstream sayfasını panele aldım" />
+    <MESSAGE value="User Profile Photo Ek Alanlar Ekleme ekledim ve Güncelleme işledim" />
+    <option name="LAST_COMMIT_MESSAGE" value="User Profile Photo Ek Alanlar Ekleme ekledim ve Güncelleme işledim" />
   </component>
 </project>
