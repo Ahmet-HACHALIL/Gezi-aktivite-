@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ed6872ea-09d3-4b0b-90a8-06b9bfd43690" name="Default Changelist" comment="AboutUs References ve ContactUs Sayfaları tamamladım ve hazır oldu">
+    <list default="true" id="ed6872ea-09d3-4b0b-90a8-06b9bfd43690" name="Default Changelist" comment="Contact Mesajları ve Admin panelde yönetimi yaptım">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -215,7 +214,8 @@
       <workItem from="1612117562392" duration="7401000" />
       <workItem from="1612193299560" duration="14872000" />
       <workItem from="1612277353261" duration="25334000" />
-      <workItem from="1612357066035" duration="30778000" />
+      <workItem from="1612357066035" duration="31091000" />
+      <workItem from="1612431370555" duration="8400000" />
     </task>
     <task id="LOCAL-00001" summary="Proje oluşturdum MVC yapısı ve JetStream ile hazır Uyelik oluşturdum">
       <created>1609422749581</created>
@@ -371,7 +371,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612364539903</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Contact Mesajları ve Admin panelde yönetimi yaptım">
+      <created>1612394812235</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1612394812235</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -411,6 +418,7 @@
     <MESSAGE value="User Profile Page oluşturdum Jetstream sayfasını panele aldım" />
     <MESSAGE value="User Profile Photo Ek Alanlar Ekleme ekledim ve Güncelleme işledim" />
     <MESSAGE value="AboutUs References ve ContactUs Sayfaları tamamladım ve hazır oldu" />
-    <option name="LAST_COMMIT_MESSAGE" value="AboutUs References ve ContactUs Sayfaları tamamladım ve hazır oldu" />
+    <MESSAGE value="Contact Mesajları ve Admin panelde yönetimi yaptım" />
+    <option name="LAST_COMMIT_MESSAGE" value="Contact Mesajları ve Admin panelde yönetimi yaptım" />
   </component>
 </project>
