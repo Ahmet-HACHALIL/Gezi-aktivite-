@@ -28,7 +28,9 @@ Route::get('/references', [HomeController::class, 'references'])->name('referenc
 Route::get('/fag', [HomeController::class, 'fag'])->name('fag');
 Route::get('/contact', [HomeController::class, 'contact'])->name('contact');
 Route::post('/sendmessage', [HomeController::class, 'sendmessage'])->name('sendmessage');
-Route::get('/sightseeing_Place/{id}/{slug}', [HomeController::class, 'sightseeing_Place'])->name('sightseeing_Place');
+Route::get('/sightseeing_place/{id}/{slug}', [HomeController::class, 'sightseeing_place'])->name('sightseeing_place');
+Route::get('/tour_sightseeing_places/{id}/{slug}', [HomeController::class, 'tour_sightseeing_places'])->name('tour_sightseeing_places');
+
 
 //Route::get('/test/{id}/{name}', [HomeController::class, 'test'])->where(['id'=>'[0-9]+','name'=>'[A-Za-z]+']);
 Route::get('/test/{id}/{name}', [HomeController::class, 'test'])->whereNumber('id')->whereAlpha('name')->name('test');
