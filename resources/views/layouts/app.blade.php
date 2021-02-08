@@ -1,11 +1,21 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>{{ config('app.name', 'Laravel') }}</title>
+@section('footerjs')
+    <!-- ALL JS FILES -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="{{ asset('assets') }}/js/popper.min.js"></script>
+    <script src="{{ asset('assets') }}/js/bootstrap.min.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="{{ asset('assets') }}/js/jquery.magnific-popup.min.js"></script>
+    <script src="{{ asset('assets') }}/js/jquery.pogo-slider.min.js"></script>
+    <script src="{{ asset('assets') }}/js/slider-index.js"></script>
+    <script src="{{ asset('assets') }}/js/smoothscroll.js"></script>
+    <script src="{{ asset('assets') }}/js/form-validator.min.js"></script>
+    <script src="{{ asset('assets') }}/js/contact-form-script.js"></script>
+    <script src="{{ asset('assets') }}/js/isotope.min.js"></script>
+    <script src="{{ asset('assets') }}/js/images-loded.min.js"></script>
+    <script src="{{ asset('assets') }}/js/custom.js"></script>
+    /* counter js */
+@endsection
 
         <!-- Fonts -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
@@ -17,26 +27,12 @@
 
         <!-- Scripts -->
         <script src="{{ mix('js/app.js') }}" defer></script>
-    </head>
-    <body class="font-sans antialiased">
-        <div class="min-h-screen bg-gray-100">
-            @livewire('navigation-dropdown')
-
-            <!-- Page Heading -->
-            <header class="bg-white shadow">
-                <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-                    {{ $header }}
-                </div>
-            </header>
 
             <!-- Page Content -->
             <main>
                 {{ $slot }}
             </main>
-        </div>
 
         @stack('modals')
 
         @livewireScripts
-    </body>
-</html>

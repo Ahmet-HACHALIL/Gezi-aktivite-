@@ -3,6 +3,7 @@
 use App\Http\Controllers\Admin\FaqController;
 use App\Http\Controllers\Admin\MessageController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\SightseeingPlaceController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -109,6 +110,27 @@ Route::middleware('auth')->prefix('myaccount')->namespace('myaccount')->group(fu
 #user
 Route::middleware('auth')->prefix('user')->namespace('user')->group(function (){
     Route::get('/profile', [UserController::class, 'index'])->name('userprofile');
+
+    #Sightseeing_Places
+    Route::prefix('Sightseeing_Places')->group(function () {
+        //Route assigned name "admin.users"...
+        Route::get('/', [SightseeingPlaceController::class, 'index'])->name('user_sightseeing_place');
+        Route::get('create', [SightseeingPlaceController::class, 'create'])->name('user_sightseeing_place_add');
+        Route::post('store', [SightseeingPlaceController::class, 'store'])->name('user_sightseeing_place_store');
+        Route::get('edit/{id}', [SightseeingPlaceController::class, 'edit'])->name('user_sightseeing_place_edit');
+        Route::post('update/{id}', [SightseeingPlaceController::class, 'update'])->name('user_sightseeing_place_update');
+        Route::get('delete/{id}', [SightseeingPlaceController::class, 'destroy'])->name('user_sightseeing_place_delete');
+        Route::get('show', [SightseeingPlaceController::class, 'show'])->name('user_sightseeing_place_show');
+    });
+
+    #Sightseeing_Places image gallery
+    Route::prefix('image')->group(function () {
+        Route::get('create/{sightseeing_places_id}', [\App\Http\Controllers\Admin\ImageController::class, 'create'])->name('user_image_add');
+        Route::post('store/{sightseeing_places_id}', [\App\Http\Controllers\Admin\ImageController::class, 'store'])->name('user_image_store');
+        Route::get('delete/{id}/{sightseeing_places_id}', [\App\Http\Controllers\Admin\ImageController::class, 'destroy'])->name('user_image_delete');
+        Route::get('show', [\App\Http\Controllers\Admin\ImageController::class, 'show'])->name('admin_image_show');
+    });
+
 });
 
 //login
