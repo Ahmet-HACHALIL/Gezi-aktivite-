@@ -1,8 +1,10 @@
 <?php
 
 use App\Http\Controllers\Admin\FaqController;
+use App\Http\Controllers\Admin\ImageController;
 use App\Http\Controllers\Admin\MessageController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ReservedplaceController;
 use App\Http\Controllers\SightseeingPlaceController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
@@ -32,7 +34,6 @@ Route::get('/contact', [HomeController::class, 'contact'])->name('contact');
 Route::post('/sendmessage', [HomeController::class, 'sendmessage'])->name('sendmessage');
 Route::get('/sightseeing_place/{id}/{slug}', [HomeController::class, 'sightseeing_place'])->name('sightseeing_place');
 Route::get('/tour_sightseeing_places/{id}/{slug}', [HomeController::class, 'tour_sightseeing_places'])->name('tour_sightseeing_places');
-Route::get('/reserve_now/{id}', [HomeController::class, 'reserve_now'])->name('reserve_now');
 #Route::post('/get_sightseeing_place', [HomeController::class, 'get_sightseeing_place'])->name('get_sightseeing_place');
 
 
@@ -109,7 +110,7 @@ Route::middleware('auth')->prefix('myaccount')->namespace('myaccount')->group(fu
 
 #user
 Route::middleware('auth')->prefix('user')->namespace('user')->group(function (){
-    Route::get('/profile', [UserController::class, 'index'])->name('userprofile');
+    Route::get('user/profile', [UserController::class, 'index'])->name('userprofile');
 
     #Sightseeing_Places
     Route::prefix('Sightseeing_Places')->group(function () {
@@ -125,10 +126,19 @@ Route::middleware('auth')->prefix('user')->namespace('user')->group(function (){
 
     #Sightseeing_Places image gallery
     Route::prefix('image')->group(function () {
-        Route::get('create/{sightseeing_places_id}', [\App\Http\Controllers\Admin\ImageController::class, 'create'])->name('user_image_add');
-        Route::post('store/{sightseeing_places_id}', [\App\Http\Controllers\Admin\ImageController::class, 'store'])->name('user_image_store');
-        Route::get('delete/{id}/{sightseeing_places_id}', [\App\Http\Controllers\Admin\ImageController::class, 'destroy'])->name('user_image_delete');
-        Route::get('show', [\App\Http\Controllers\Admin\ImageController::class, 'show'])->name('admin_image_show');
+        Route::get('create/{sightseeing_places_id}', [ImageController::class, 'create'])->name('user_image_add');
+        Route::post('store/{sightseeing_places_id}', [ImageController::class, 'store'])->name('user_image_store');
+        Route::get('delete/{id}/{sightseeing_places_id}', [ImageController::class, 'destroy'])->name('user_image_delete');
+        Route::get('show', [ImageController::class, 'show'])->name('admin_image_show');
+    });
+
+    #ReservedPlaces
+    Route::prefix('reservedplace')->group(function () {
+        //Route assigned name "admin.users"...
+        Route::get('/', [ReservedplaceController::class, 'index'])->name('user_reservedplace');
+        Route::post('store/{id}', [ReservedplaceController::class, 'store'])->name('user_reservedplace_add');
+        Route::post('update/{id}', [ReservedplaceController::class, 'update'])->name('user_reservedplace_update');
+        Route::get('delete/{id}', [ReservedplaceController::class, 'destroy'])->name('user_reservedplace_delete');
     });
 
 });
