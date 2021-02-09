@@ -44,63 +44,64 @@ Route::get('/test/{id}/{name}', [HomeController::class, 'test'])->whereNumber('i
 //Admin
 Route::middleware('auth')->prefix('admin')->group(function (){
 
-    Route::get('/', [\App\Http\Controllers\Admin\HomeController::class, 'index'])->name('admin_home');
-    #Tours
-    Route::get('tour', [\App\Http\Controllers\Admin\TurlarController::class, 'index'])->name('admin_turlar');
-    Route::get('tour/add', [\App\Http\Controllers\Admin\TurlarController::class, 'add'])->name('admin_turlar_add');
-    Route::post('tour/create', [\App\Http\Controllers\Admin\TurlarController::class, 'create'])->name('admin_turlar_create');
-    Route::get('tour/edit/{id}', [\App\Http\Controllers\Admin\TurlarController::class, 'edit'])->name('admin_turlar_edit');
-    Route::post('tour/update/{id}', [\App\Http\Controllers\Admin\TurlarController::class, 'update'])->name('admin_turlar_update');
-    Route::get('tour/delete/{id}', [\App\Http\Controllers\Admin\TurlarController::class, 'destroy'])->name('admin_turlar_delete');
-    Route::get('tour/show', [\App\Http\Controllers\Admin\TurlarController::class, 'show'])->name('admin_turlar_show');
+    #Admin Role
+    Route::middleware('admin')->group(function (){
+        Route::get('/', [\App\Http\Controllers\Admin\HomeController::class, 'index'])->name('admin_home');
+        #Tours
+        Route::get('tour', [\App\Http\Controllers\Admin\TurlarController::class, 'index'])->name('admin_turlar');
+        Route::get('tour/add', [\App\Http\Controllers\Admin\TurlarController::class, 'add'])->name('admin_turlar_add');
+        Route::post('tour/create', [\App\Http\Controllers\Admin\TurlarController::class, 'create'])->name('admin_turlar_create');
+        Route::get('tour/edit/{id}', [\App\Http\Controllers\Admin\TurlarController::class, 'edit'])->name('admin_turlar_edit');
+        Route::post('tour/update/{id}', [\App\Http\Controllers\Admin\TurlarController::class, 'update'])->name('admin_turlar_update');
+        Route::get('tour/delete/{id}', [\App\Http\Controllers\Admin\TurlarController::class, 'destroy'])->name('admin_turlar_delete');
+        Route::get('tour/show', [\App\Http\Controllers\Admin\TurlarController::class, 'show'])->name('admin_turlar_show');
 
-    #Sightseeing_Places
-    Route::prefix('Sightseeing_Places')->group(function () {
-        //Route assigned name "admin.users"...
-        Route::get('/', [\App\Http\Controllers\Admin\SightseeingPlacesController::class, 'index'])->name('admin_sightseeing_place');
-        Route::get('create', [\App\Http\Controllers\Admin\SightseeingPlacesController::class, 'create'])->name('admin_sightseeing_place_add');
-        Route::post('store', [\App\Http\Controllers\Admin\SightseeingPlacesController::class, 'store'])->name('admin_sightseeing_place_store');
-        Route::get('edit/{id}', [\App\Http\Controllers\Admin\SightseeingPlacesController::class, 'edit'])->name('admin_sightseeing_place_edit');
-        Route::post('update/{id}', [\App\Http\Controllers\Admin\SightseeingPlacesController::class, 'update'])->name('admin_sightseeing_place_update');
-        Route::get('delete/{id}', [\App\Http\Controllers\Admin\SightseeingPlacesController::class, 'destroy'])->name('admin_sightseeing_place_delete');
-        Route::get('show', [\App\Http\Controllers\Admin\SightseeingPlacesController::class, 'show'])->name('admin_sightseeing_place_show');
+        #Sightseeing_Places
+        Route::prefix('Sightseeing_Places')->group(function () {
+            //Route assigned name "admin.users"...
+            Route::get('/', [\App\Http\Controllers\Admin\SightseeingPlacesController::class, 'index'])->name('admin_sightseeing_place');
+            Route::get('create', [\App\Http\Controllers\Admin\SightseeingPlacesController::class, 'create'])->name('admin_sightseeing_place_add');
+            Route::post('store', [\App\Http\Controllers\Admin\SightseeingPlacesController::class, 'store'])->name('admin_sightseeing_place_store');
+            Route::get('edit/{id}', [\App\Http\Controllers\Admin\SightseeingPlacesController::class, 'edit'])->name('admin_sightseeing_place_edit');
+            Route::post('update/{id}', [\App\Http\Controllers\Admin\SightseeingPlacesController::class, 'update'])->name('admin_sightseeing_place_update');
+            Route::get('delete/{id}', [\App\Http\Controllers\Admin\SightseeingPlacesController::class, 'destroy'])->name('admin_sightseeing_place_delete');
+            Route::get('show', [\App\Http\Controllers\Admin\SightseeingPlacesController::class, 'show'])->name('admin_sightseeing_place_show');
+        });
+
+        #Messages
+        Route::prefix('messages')->group(function () {
+            //Route assigned name "admin.users"...
+            Route::get('/', [MessageController::class, 'index'])->name('admin_message');
+            Route::get('edit/{id}', [MessageController::class, 'edit'])->name('admin_message_edit');
+            Route::post('update/{id}', [MessageController::class, 'update'])->name('admin_message_update');
+            Route::get('delete/{id}', [MessageController::class, 'destroy'])->name('admin_message_delete');
+            Route::get('show', [MessageController::class, 'show'])->name('admin_message_show');
+        });
+
+        #Sightseeing_Places image gallery
+        Route::prefix('image')->group(function () {
+            Route::get('create/{sightseeing_places_id}', [\App\Http\Controllers\Admin\ImageController::class, 'create'])->name('admin_image_add');
+            Route::post('store/{sightseeing_places_id}', [\App\Http\Controllers\Admin\ImageController::class, 'store'])->name('admin_image_store');
+            Route::get('delete/{id}/{sightseeing_places_id}', [\App\Http\Controllers\Admin\ImageController::class, 'destroy'])->name('admin_image_delete');
+            Route::get('show', [\App\Http\Controllers\Admin\ImageController::class, 'show'])->name('admin_image_show');
+        });
+
+        #Setting
+        Route::get('setting', [\App\Http\Controllers\Admin\SettingController::class, 'index'])->name('admin_setting');
+        Route::post('setting/update', [\App\Http\Controllers\Admin\SettingController::class, 'update'])->name('admin_setting_update');
+
+        #Faq
+        Route::prefix('faq')->group(function () {
+            //Route assigned name "admin.users"...
+            Route::get('/', [FaqController::class, 'index'])->name('admin_faq');
+            Route::get('create', [FaqController::class, 'create'])->name('admin_faq_add');
+            Route::post('store', [FaqController::class, 'store'])->name('admin_faq_store');
+            Route::get('edit/{id}', [FaqController::class, 'edit'])->name('admin_faq_edit');
+            Route::post('update/{id}', [FaqController::class, 'update'])->name('admin_faq_update');
+            Route::get('delete/{id}', [FaqController::class, 'destroy'])->name('admin_faq_delete');
+            Route::get('show', [FaqController::class, 'show'])->name('admin_faq_show');
+        });
     });
-
-    #Messages
-    Route::prefix('messages')->group(function () {
-        //Route assigned name "admin.users"...
-        Route::get('/', [MessageController::class, 'index'])->name('admin_message');
-        Route::get('edit/{id}', [MessageController::class, 'edit'])->name('admin_message_edit');
-        Route::post('update/{id}', [MessageController::class, 'update'])->name('admin_message_update');
-        Route::get('delete/{id}', [MessageController::class, 'destroy'])->name('admin_message_delete');
-        Route::get('show', [MessageController::class, 'show'])->name('admin_message_show');
-    });
-
-    #Sightseeing_Places image gallery
-    Route::prefix('image')->group(function () {
-        Route::get('create/{sightseeing_places_id}', [\App\Http\Controllers\Admin\ImageController::class, 'create'])->name('admin_image_add');
-        Route::post('store/{sightseeing_places_id}', [\App\Http\Controllers\Admin\ImageController::class, 'store'])->name('admin_image_store');
-        Route::get('delete/{id}/{sightseeing_places_id}', [\App\Http\Controllers\Admin\ImageController::class, 'destroy'])->name('admin_image_delete');
-        Route::get('show', [\App\Http\Controllers\Admin\ImageController::class, 'show'])->name('admin_image_show');
-    });
-
-    #Setting
-    Route::get('setting', [\App\Http\Controllers\Admin\SettingController::class, 'index'])->name('admin_setting');
-    Route::post('setting/update', [\App\Http\Controllers\Admin\SettingController::class, 'update'])->name('admin_setting_update');
-
-    #Faq
-    Route::prefix('faq')->group(function () {
-        //Route assigned name "admin.users"...
-        Route::get('/', [FaqController::class, 'index'])->name('admin_faq');
-        Route::get('create', [FaqController::class, 'create'])->name('admin_faq_add');
-        Route::post('store', [FaqController::class, 'store'])->name('admin_faq_store');
-        Route::get('edit/{id}', [FaqController::class, 'edit'])->name('admin_faq_edit');
-        Route::post('update/{id}', [FaqController::class, 'update'])->name('admin_faq_update');
-        Route::get('delete/{id}', [FaqController::class, 'destroy'])->name('admin_faq_delete');
-        Route::get('show', [FaqController::class, 'show'])->name('admin_faq_show');
-    });
-
-
 });
 
 #user

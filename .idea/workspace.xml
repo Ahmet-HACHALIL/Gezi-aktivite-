@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ed6872ea-09d3-4b0b-90a8-06b9bfd43690" name="Default Changelist" comment="User Sightseeing place Üye gezi yerleri Yönetimi">
+    <list default="true" id="ed6872ea-09d3-4b0b-90a8-06b9bfd43690" name="Default Changelist" comment="Reserved Places Rezerve koltuklar yaptım">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -221,7 +222,8 @@
       <workItem from="1612564457791" duration="2206000" />
       <workItem from="1612605901199" duration="30647000" />
       <workItem from="1612690580185" duration="34579000" />
-      <workItem from="1612775336322" duration="46647000" />
+      <workItem from="1612775336322" duration="46961000" />
+      <workItem from="1612865776309" duration="11506000" />
     </task>
     <task id="LOCAL-00001" summary="Proje oluşturdum MVC yapısı ve JetStream ile hazır Uyelik oluşturdum">
       <created>1609422749581</created>
@@ -426,7 +428,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612798745161</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Reserved Places Rezerve koltuklar yaptım">
+      <created>1612827237747</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1612827237747</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -445,7 +454,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Bootsrap ile Layout Şablon yaptım" />
     <MESSAGE value="Hazır Html Web Template Uyarladım" />
     <MESSAGE value="Admin temel dosyaları oluşturdum(Admin Panel template Uyarladım)" />
     <MESSAGE value="Admin Login İşlemleri yaptım" />
@@ -470,6 +478,7 @@
     <MESSAGE value="Tour Detail yolculuk İçerik Detay Sayfası" />
     <MESSAGE value="Frequently Asked Question Accordion Menu Sıkça Sorulan Sorular oluşturdum" />
     <MESSAGE value="User Sightseeing place Üye gezi yerleri Yönetimi" />
-    <option name="LAST_COMMIT_MESSAGE" value="User Sightseeing place Üye gezi yerleri Yönetimi" />
+    <MESSAGE value="Reserved Places Rezerve koltuklar yaptım" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reserved Places Rezerve koltuklar yaptım" />
   </component>
 </project>
