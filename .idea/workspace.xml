@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ed6872ea-09d3-4b0b-90a8-06b9bfd43690" name="Default Changelist" comment="User Admin Role Permission Yetkilendirmeler yaptım">
+    <list default="true" id="ed6872ea-09d3-4b0b-90a8-06b9bfd43690" name="Default Changelist" comment="Search Products with Jetstream livewire Autocomplete yaptım ve Admin Panel User Role management ayarladım">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -222,7 +221,16 @@
       <workItem from="1612690580185" duration="34579000" />
       <workItem from="1612775336322" duration="46961000" />
       <workItem from="1612865776309" duration="37211000" />
-      <workItem from="1612949448156" duration="11958000" />
+      <workItem from="1612949448156" duration="34766000" />
+      <workItem from="1613018984852" duration="19530000" />
+      <workItem from="1613117212972" duration="6346000" />
+      <workItem from="1613213435376" duration="749000" />
+      <workItem from="1613217924092" duration="1546000" />
+      <workItem from="1613310649762" duration="1122000" />
+      <workItem from="1619021923982" duration="207000" />
+      <workItem from="1621694705069" duration="630000" />
+      <workItem from="1622970489776" duration="82000" />
+      <workItem from="1626033452981" duration="175000" />
     </task>
     <task id="LOCAL-00001" summary="Proje oluşturdum MVC yapısı ve JetStream ile hazır Uyelik oluşturdum">
       <created>1609422749581</created>
@@ -441,7 +449,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612878114641</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Search Products with Jetstream livewire Autocomplete yaptım ve Admin Panel User Role management ayarladım">
+      <created>1612966455191</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1612966455191</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -460,7 +475,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Admin temel dosyaları oluşturdum(Admin Panel template Uyarladım)" />
     <MESSAGE value="Admin Login İşlemleri yaptım" />
     <MESSAGE value="Turlar Database İşlemleri Model Migration Route Controller List hepsini yaptım" />
     <MESSAGE value="Turlar Ekleme ve turlar Silme işlemleri yaptım" />
@@ -485,6 +499,7 @@
     <MESSAGE value="User Sightseeing place Üye gezi yerleri Yönetimi" />
     <MESSAGE value="Reserved Places Rezerve koltuklar yaptım" />
     <MESSAGE value="User Admin Role Permission Yetkilendirmeler yaptım" />
-    <option name="LAST_COMMIT_MESSAGE" value="User Admin Role Permission Yetkilendirmeler yaptım" />
+    <MESSAGE value="Search Products with Jetstream livewire Autocomplete yaptım ve Admin Panel User Role management ayarladım" />
+    <option name="LAST_COMMIT_MESSAGE" value="Search Products with Jetstream livewire Autocomplete yaptım ve Admin Panel User Role management ayarladım" />
   </component>
 </project>
